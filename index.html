@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+   
+  </style>
+</head>
+<body class="overflow-x-hidden " >
+  
+  <nav >
+    <div class="flex nav_container items-center justify-around">
+      <ul class="logo_link_container flex flex-row space-x-16 px-40 py-8 items-center "> 
+        
+        <li class="font-bold text-4xl text-gray-800">sneakers</li>
+        <li class="text-gray-400">Collections</li>
+        <li class="text-gray-400">Mens</li>
+        <li class="text-gray-400">Women</li>
+        <li class="text-gray-400">About</li>
+        <li class="text-gray-400">Contact</li>
+        
+      </ul>
+      <div >
+        <ul class="cart_avatar_container flex content-end space-x-4 items-center relative sm:right-32">
+          <a class="mx-8" href="#" ><img src="./images/icon-cart.svg"  id="cart_icon" alt="cart" ><p class="absolute font-bold text-sm text-black" id="cart_number" >(0)</p></a>
+          <a class="avatar_img" href="#"><img src="./images/image-avatar.png" alt="chutiya" width="50px"></a>
+        </ul>
+        
+      </div>
+    </div>
+    
+  </nav>
+  <div class="w-40 h-40 bg-black  top-20 hidden absolute left-[71rem]" id="cart_menu" >
+  sgdkjg
+  </div>
+  <div class="banner_image flex items-center rounded-md absolute">
+      <img src="./images/image-product-1.jpg" class="rounded-md items-center ml-60 my-12 " id="image_box" alt="banner " width="430rem">
+      <div class="flex flex-row  space-x-5">
+        <a href="#" class="relative top-[17em] right-[27rem] w-[95px] border-4  rounded-md" id="img1"> <img src="./images/image-product-1-thumbnail.jpg"  alt=""></a>
+        <a href="#" class="relative top-[17em] right-[27rem] w-[95px] border-4  rounded-md" id="img2"> <img src="./images/image-product-2-thumbnail.jpg"  alt=""></a>
+        <a href="#" class="relative top-[17em] right-[27rem] w-[95px] border-4  rounded-md" id="img3"> <img src="./images/image-product-3-thumbnail.jpg"  alt=""></a>
+        <a href="#" class="relative top-[17em] right-[27rem] w-[95px] border-4  rounded-md" id="img4"> <img src="./images/image-product-4-thumbnail.jpg"  alt=""></a>
+        
+      </div>
+    </div>
+    <div class="info_section relative top-[6rem] left-[50rem] flex flex-col justify-center overflow-hidden">
+      <h1 class="heading text-lg text-orange-400 font-bold"> SNEAKER COMPANY</h1>
+      <h1 class="product_title text-4xl font-bold w-[25vw] overflow-hidden" >Fall Limited Edition Sneakers </h1>
+      <h1 class="text-md mt-8 font-thin  product_description w-[30vw] overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio sequi consequatur quia quasi necessitatibus iure provident deserunt iste harum aut vitae laboriosam non et, rerum optio, animi unde sit!</h1>
+      <div class="flex flex-row space-x-3">
+        <h1 class="font-extrabold text-3xl mt-8">$125.00</h1>
+          <div class="bg-orange-200 text-orange-500 w-10 px-[2px] py-[2px] text-md font-bold mt-8"> 50% </div>
+
+        </div>
+        <h1 class="font-thin text-slate-400 text-xl mt-2 line-through">$250.00</h1>
+        <div class="flex flex-row space-x-1">
+          <a class="bg-slate-200 text-orange-400 flex justify-center w-8 mt-4 cursor-pointer text-lg font-bold rounded-md" id="minus"> - </a>
+          <a class="bg-slate-200 text-orange-400 flex justify-center w-16 mt-4 font-bold text-lg rounded-md" id="cart_value"> 0 </a>
+          <a class="bg-slate-200 text-orange-400 flex justify-center w-8 mt-4 cursor-pointer text-lg rounded-md" id="add"> + </a>
+        </div>
+        
+        
+      </div>
+      <button class="px-4 py-2 rounded-md w-40 h-10 bg-orange-400 mx-6 text-white absolute top-[73.5vh] left-[62vw]">Add to Cart</button>
+      <div class="bg-gradient-to-r from-white absolute w-[90vw] h-[90vh]  items-center justify-center top-[5rem] left-[6rem] hidden"  id="imagebox1">
+        <img src="./images/icon-previous.svg" id="prev" alt="previous" class="mx-5 text-white">
+        <img src="./images/image-product-1.jpg" class="imagebox1 w-[60vw] h-[80vh]"  id="image1"  alt="image">
+        <img src="./images/icon-next.svg" alt="next Icon" id="next" class="mx-8">
+         <img src="./images/icon-delete.svg" class="absolute left-[80vw] bottom-[85vh]  cursor-pointer"  alt="cancel" id="cancel">
+      </div>
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>
